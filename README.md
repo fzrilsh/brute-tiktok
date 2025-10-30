@@ -1,48 +1,48 @@
 # brute-tiktok
 
-**brute-tiktok** adalah sebuah tools semi-otomatis yang digunakan untuk menambahkan views atau favorites pada video TikTok. Prosesnya dilakukan dengan memasukkan URL video TikTok yang ingin ditingkatkan views atau favorites-nya, kemudian script akan berjalan secara terus menerus hingga dihentikan.
+**brute-tiktok** is a semi-automated tool used to increase views or favorites on TikTok videos. The process is done by entering the TikTok video URL you want to boost, then the script runs continuously until stopped.
 
-## Fitur Utama
-- **Tambah Views:** Views pada video akan bertambah sekitar setiap 1-2 menit dengan kenaikan antara 500 hingga 2000 views.
-- **Tambah Favorites:** Favorites akan bertambah sekitar setiap 1-2 menit dengan kenaikan antara 10 hingga 50 favorites.
-- Menggunakan **API dari zefoy.com**.
-- **Semi-otomatis:** Tools ini tidak berjalan dalam mode headless karena membutuhkan interaksi manual untuk mengisi validasi captcha.
+## Main Features
+- **Add Views:** Views increase roughly every 1–2 minutes, with increments of about 500 to 2000 views per batch.
+- **Add Favorites:** Favorites increase roughly every 1–2 minutes, with increments of about 10 to 50 favorites per batch.
+- Uses the **zefoy.com API**.
+- **Semi-automated:** The tool does not run in headless mode because it requires manual interaction to solve captcha validation.
 
-## Persyaratan
-- **Node.js**: Versi terbaru.
-- **Chromium**: Untuk mengotomatiskan browser tanpa headless mode.
-- **API dari zefoy.com**: Digunakan untuk berinteraksi dengan TikTok.
+## Requirements
+- **Node.js**: Latest version.
+- **Chromium**: To automate the browser without headless mode.
+- **API from zefoy.com**: Used to interact with TikTok.
 
-## Instalasi
-1. Clone repository ini:
+## Installation
+1. Clone this repository:
     ```bash
     git clone https://github.com/fzrilsh/brute-tiktok
     ```
 
-2. Masuk ke direktori project dan install semua package:
+2. Enter the project directory and install all packages:
     ```bash
     cd brute-tiktok && npm install
     ```
 
-3. Pastikan **Chromium** telah terinstall dengan menjalankan perintah berikut:
+3. Make sure **Chromium** is installed by running:
     ```bash
     node node_modules/puppeteer/install.js
     ```
 
-## Cara Menjalankan Script
-1. Untuk memulai script, jalankan perintah:
+## How to Run
+1. To start the script, run:
     ```bash
     node .
     ```
 
-2. Ikuti langkah-langkah yang muncul di terminal, termasuk memasukkan URL video TikTok yang ingin ditingkatkan views atau favorites-nya.
+2. Follow the prompts in the terminal, including entering the TikTok video URL you want to boost.
 
-3. Browser **Chromium** akan terbuka dan berjalan tanpa mode headless. Anda perlu mengisi validasi captcha secara manual.
+3. The **Chromium** browser will open and run without headless mode. You will need to manually solve any captcha validations.
 
-## Catatan
-- Penambahan views dan favorites membutuhkan waktu antara 1 hingga 2 menit untuk setiap batch.
-- Harap perhatikan bahwa tools ini semi-otomatis karena memerlukan pengisian captcha secara manual.
-- Pastikan untuk mengikuti kebijakan penggunaan dari zefoy.com.
+## Notes
+- Adding views and favorites takes about 1–2 minutes per batch.
+- This tool is semi-automated because manual captcha solving is required.
+- Make sure to follow zefoy.com's usage policies.
 
-## Lisensi
-Proyek ini dilisensikan di bawah lisensi [MIT](./LICENSE).
+## License
+This project is licensed under the [MIT License](./LICENSE).
